@@ -1,2 +1,269 @@
 # -lamsa.studio
-design studio 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamsa | Interior & House Design</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ------------ Base styles ------------ */
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      color: #333;
+      background-color: #f8f4f0;      /* beige */
+    }
+
+    /* ------------ Header ------------ */
+    header {
+      background-color: #7d8f69;      /* olive‑green */
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: .2rem;
+      transition: transform .3s ease;
+    }
+    header h1:hover { transform: scale(1.05); }
+
+    /* ------------ Navigation ------------ */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #e5e0d8;
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: transform .3s ease;
+    }
+    nav a:hover { transform: scale(1.1); }
+
+    /* ------------ Sections ------------ */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      transition: transform .3s ease;
+    }
+    .section h2:hover { transform: scale(1.05); }
+
+    /* ------------ Grid layouts ------------ */
+    .services, .portfolio, .blog-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 2rem;
+    }
+
+    /* ------------ Cards ------------ */
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,.2);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: .8rem;
+    }
+
+    /* ------------ Contact form ------------ */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: transform .3s ease;
+    }
+    .contact-form input:hover,
+    .contact-form textarea:hover { transform: scale(1.02); }
+    .contact-form button {
+      padding: 1rem;
+      background-color: #7d8f69;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .3s ease;
+    }
+    .contact-form button:hover { transform: scale(1.05); }
+
+    /* ------------ WhatsApp floating button ------------ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      border-radius: 50%;
+      padding: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+      z-index: 1000;
+    }
+    .whatsapp-float img { width: 24px; height: 24px; }
+
+    /* ------------ Footer ------------ */
+    footer {
+      background-color: #7d8f69;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>Lamsa</h1>
+    <p>Elegant Designs for Every Space</p>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== Services ===== -->
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?interior" alt="Full Home Interior">
+        <h3>Full Home Interior</h3>
+        <p>Turnkey design solutions from concept to completion, tailored to your lifestyle.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?kitchen" alt="Modular Kitchen">
+        <h3>Modular Kitchen</h3>
+        <p>Smart layouts with elegant finishes and efficient storage solutions.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?bedroom" alt="Bedroom Design">
+        <h3>Bedroom Design</h3>
+        <p>Calm, creative bedroom concepts that enhance relaxation and style.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?renovation" alt="Home Renovation">
+        <h3>Home Renovation</h3>
+        <p>Refresh and revamp your space with expert renovation services.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?minimalist,home" alt="Modern Minimalist">
+        <h3>Modern Minimalist</h3>
+        <p>Sleek, clutter‑free interiors promoting calm and organization.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?decor,interior" alt="Home Styling">
+        <h3>Home Styling</h3>
+        <p>Curated décor and furnishings that bring your vision to life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio ===== -->
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?luxury,livingroom" alt="Living Room">
+        <h3>Elegant Living Room</h3>
+        <p>Warm tones and modern textures create a welcoming lounge.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?home,design" alt="Modern Kitchen">
+        <h3>Modern Kitchen</h3>
+        <p>Crisp lines, neutral palette, and functional storage.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?bedroom,interior" alt="Bedroom Retreat">
+        <h3>Bedroom Retreat</h3>
+        <p>Minimalist design anchored in natural beige and olive accents.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Blog ===== -->
+  <section class="section" id="blog">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-posts">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?interior,design" alt="Interior Tips">
+        <h3>Top 5 Interior Design Tips</h3>
+        <p>Transform your home with these simple yet effective design ideas.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?furniture,home" alt="Furniture Ideas">
+        <h3>Choosing the Right Furniture</h3>
+        <p>Select pieces that complement both your space and style.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?decor,ideas" alt="Decor Trends">
+        <h3>2025 Home Décor Trends</h3>
+        <p>Stay ahead with this year’s emerging looks and color palettes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp floating button -->
+  <a class="whatsapp-float" href="https://wa.me/your-number" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lamsa. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
